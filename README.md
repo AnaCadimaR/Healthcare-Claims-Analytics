@@ -92,12 +92,19 @@ H
 #SQL Workflow
 
 The SQL process included:
+
 ✔ Data integration
+
 ✔ Data type standardization
+
 ✔ Null handling
+
 ✔ Safe casting
+
 ✔ Feature engineering
+
 ✔ Business KPI generation
+
 
 Main engineered features:
 
@@ -154,4 +161,5 @@ Average inpatient stay: 5.72 days
 The dashboard allows analysts to quickly identify high-cost providers and reimbursement patterns that deserve further review.
 
 #Business Impact
+
 This solution demonstrates how healthcare claims data can be transformed into actionable business insights. By combining SQL-based data engineering with interactive Tableau visualizations, decision-makers can monitor reimbursement patterns, identify high-cost providers, prioritize fraud investigations, and support operational efficiency through data-driven decisions.
