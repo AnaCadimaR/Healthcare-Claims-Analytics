@@ -1,0 +1,2756 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0603.1643                               -->
+<workbook original-version='18.1' source-build='2026.2.0 (20262.26.0603.1643)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='bq-results-20260701-164713-1782924512661' inline='true' name='federated.01l6d0q1jxfvz310b2kef1v0izej' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='bq-results-20260701-164713-1782924512661' name='textscan.1odqri71bbmvfq19ufoyj0r3ra6w'>
+            <connection class='textscan' directory='C:/Users/accad/Downloads' filename='bq-results-20260701-164713-1782924512661.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1odqri71bbmvfq19ufoyj0r3ra6w' name='bq-results-20260701-164713-1782924512661.csv' table='[bq-results-20260701-164713-1782924512661#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_CM' separator=','>
+            <column datatype='string' name='BeneID' ordinal='0' />
+            <column datatype='string' name='ClaimID' ordinal='1' />
+            <column datatype='date' name='ClaimStartDt' ordinal='2' />
+            <column datatype='date' name='ClaimEndDt' ordinal='3' />
+            <column datatype='string' name='Provider' ordinal='4' />
+            <column datatype='integer' name='InscClaimAmtReimbursed' ordinal='5' />
+            <column datatype='integer' name='DeductibleAmtPaid' ordinal='6' />
+            <column datatype='date' name='AdmissionDt' ordinal='7' />
+            <column datatype='date' name='DischargeDt' ordinal='8' />
+            <column datatype='string' name='ClaimType' ordinal='9' />
+            <column datatype='integer' name='claim_year' ordinal='10' />
+            <column datatype='integer' name='claim_duration' ordinal='11' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[bq-results-20260701-164713-1782924512661.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;FCFA&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_CM&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BeneID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[BeneID]</local-name>
+            <parent-name>[bq-results-20260701-164713-1782924512661.csv]</parent-name>
+            <remote-alias>BeneID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[bq-results-20260701-164713-1782924512661.csv_CA6B0386986D40CBBD1A8EC19A8E9EB8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ClaimID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ClaimID]</local-name>
+            <parent-name>[bq-results-20260701-164713-1782924512661.csv]</parent-name>
+            <remote-alias>ClaimID</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[bq-results-20260701-164713-1782924512661.csv_CA6B0386986D40CBBD1A8EC19A8E9EB8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ClaimStartDt</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[ClaimStartDt]</local-name>
+            <parent-name>[bq-results-20260701-164713-1782924512661.csv]</parent-name>
+            <remote-alias>ClaimStartDt</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[bq-results-20260701-164713-1782924512661.csv_CA6B0386986D40CBBD1A8EC19A8E9EB8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ClaimEndDt</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[ClaimEndDt]</local-name>
+            <parent-name>[bq-results-20260701-164713-1782924512661.csv]</parent-name>
+            <remote-alias>ClaimEndDt</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[bq-results-20260701-164713-1782924512661.csv_CA6B0386986D40CBBD1A8EC19A8E9EB8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Provider</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Provider]</local-name>
+            <parent-name>[bq-results-20260701-164713-1782924512661.csv]</parent-name>
+            <remote-alias>Provider</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[bq-results-20260701-164713-1782924512661.csv_CA6B0386986D40CBBD1A8EC19A8E9EB8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>InscClaimAmtReimbursed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[InscClaimAmtReimbursed]</local-name>
+            <parent-name>[bq-results-20260701-164713-1782924512661.csv]</parent-name>
+            <remote-alias>InscClaimAmtReimbursed</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[bq-results-20260701-164713-1782924512661.csv_CA6B0386986D40CBBD1A8EC19A8E9EB8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DeductibleAmtPaid</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DeductibleAmtPaid]</local-name>
+            <parent-name>[bq-results-20260701-164713-1782924512661.csv]</parent-name>
+            <remote-alias>DeductibleAmtPaid</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[bq-results-20260701-164713-1782924512661.csv_CA6B0386986D40CBBD1A8EC19A8E9EB8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AdmissionDt</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[AdmissionDt]</local-name>
+            <parent-name>[bq-results-20260701-164713-1782924512661.csv]</parent-name>
+            <remote-alias>AdmissionDt</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[bq-results-20260701-164713-1782924512661.csv_CA6B0386986D40CBBD1A8EC19A8E9EB8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DischargeDt</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[DischargeDt]</local-name>
+            <parent-name>[bq-results-20260701-164713-1782924512661.csv]</parent-name>
+            <remote-alias>DischargeDt</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[bq-results-20260701-164713-1782924512661.csv_CA6B0386986D40CBBD1A8EC19A8E9EB8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ClaimType</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ClaimType]</local-name>
+            <parent-name>[bq-results-20260701-164713-1782924512661.csv]</parent-name>
+            <remote-alias>ClaimType</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[bq-results-20260701-164713-1782924512661.csv_CA6B0386986D40CBBD1A8EC19A8E9EB8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>claim_year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[claim_year]</local-name>
+            <parent-name>[bq-results-20260701-164713-1782924512661.csv]</parent-name>
+            <remote-alias>claim_year</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[bq-results-20260701-164713-1782924512661.csv_CA6B0386986D40CBBD1A8EC19A8E9EB8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>claim_duration</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[claim_duration]</local-name>
+            <parent-name>[bq-results-20260701-164713-1782924512661.csv]</parent-name>
+            <remote-alias>claim_duration</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[bq-results-20260701-164713-1782924512661.csv_CA6B0386986D40CBBD1A8EC19A8E9EB8]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Admission Dt' datatype='date' name='[AdmissionDt]' role='dimension' type='ordinal' />
+      <column caption='Bene ID' datatype='string' name='[BeneID]' role='dimension' type='nominal' />
+      <column caption='ClosureDays' datatype='integer' name='[Calculation_0245484905906176]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='DATEDIFF(&#13;&#10;&apos;day&apos;,&#13;&#10;[ClaimStartDt],&#13;&#10;[ClaimEndDt]&#13;&#10;)' />
+      </column>
+      <column caption='Claim End Dt' datatype='date' name='[ClaimEndDt]' role='dimension' type='ordinal' />
+      <column caption='Claim ID' datatype='string' name='[ClaimID]' role='dimension' type='nominal' />
+      <column caption='Claim Start Dt' datatype='date' name='[ClaimStartDt]' role='dimension' type='ordinal' />
+      <column caption='Claim Type' datatype='string' name='[ClaimType]' role='dimension' type='nominal' />
+      <column caption='Deductible Amt Paid' datatype='integer' name='[DeductibleAmtPaid]' role='measure' type='quantitative' />
+      <column caption='Discharge Dt' datatype='date' name='[DischargeDt]' role='dimension' type='ordinal' />
+      <column caption='Insc Claim Amt Reimbursed' datatype='integer' name='[InscClaimAmtReimbursed]' role='measure' type='quantitative' />
+      <column caption='bq-results-20260701-164713-1782924512661.csv' datatype='table' name='[__tableau_internal_object_id__].[bq-results-20260701-164713-1782924512661.csv_CA6B0386986D40CBBD1A8EC19A8E9EB8]' role='measure' type='quantitative' />
+      <column caption='Claim Duration' datatype='integer' name='[claim_duration]' role='measure' type='quantitative' />
+      <column caption='Claim Year' datatype='integer' name='[claim_year]' role='dimension' type='quantitative' />
+      <column-instance column='[ClaimType]' derivation='None' name='[none:ClaimType:nk]' pivot='key' type='nominal' />
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/accad/AppData/Local/Temp/TableauTemp/#TableauTemp_11a5z5f01vtpsg1746aks0uba9r0.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='07/03/2026 06:32:04 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>BeneID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[BeneID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>BeneID</remote-alias>
+              <ordinal>0</ordinal>
+              <family>bq-results-20260701-164713-1782924512661.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>64091</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[bq-results-20260701-164713-1782924512661.csv_CA6B0386986D40CBBD1A8EC19A8E9EB8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ClaimID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ClaimID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ClaimID</remote-alias>
+              <ordinal>1</ordinal>
+              <family>bq-results-20260701-164713-1782924512661.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>135392</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[bq-results-20260701-164713-1782924512661.csv_CA6B0386986D40CBBD1A8EC19A8E9EB8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ClaimStartDt</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[ClaimStartDt]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ClaimStartDt</remote-alias>
+              <ordinal>2</ordinal>
+              <family>bq-results-20260701-164713-1782924512661.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>984</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[bq-results-20260701-164713-1782924512661.csv_CA6B0386986D40CBBD1A8EC19A8E9EB8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ClaimEndDt</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[ClaimEndDt]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ClaimEndDt</remote-alias>
+              <ordinal>3</ordinal>
+              <family>bq-results-20260701-164713-1782924512661.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>964</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[bq-results-20260701-164713-1782924512661.csv_CA6B0386986D40CBBD1A8EC19A8E9EB8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Provider</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Provider]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Provider</remote-alias>
+              <ordinal>4</ordinal>
+              <family>bq-results-20260701-164713-1782924512661.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2497</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[bq-results-20260701-164713-1782924512661.csv_CA6B0386986D40CBBD1A8EC19A8E9EB8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>InscClaimAmtReimbursed</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[InscClaimAmtReimbursed]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>InscClaimAmtReimbursed</remote-alias>
+              <ordinal>5</ordinal>
+              <family>bq-results-20260701-164713-1782924512661.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>176</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[bq-results-20260701-164713-1782924512661.csv_CA6B0386986D40CBBD1A8EC19A8E9EB8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DeductibleAmtPaid</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[DeductibleAmtPaid]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>DeductibleAmtPaid</remote-alias>
+              <ordinal>6</ordinal>
+              <family>bq-results-20260701-164713-1782924512661.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[bq-results-20260701-164713-1782924512661.csv_CA6B0386986D40CBBD1A8EC19A8E9EB8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>AdmissionDt</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[AdmissionDt]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>AdmissionDt</remote-alias>
+              <ordinal>7</ordinal>
+              <family>bq-results-20260701-164713-1782924512661.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>2732</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[bq-results-20260701-164713-1782924512661.csv_CA6B0386986D40CBBD1A8EC19A8E9EB8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DischargeDt</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[DischargeDt]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>DischargeDt</remote-alias>
+              <ordinal>8</ordinal>
+              <family>bq-results-20260701-164713-1782924512661.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>5584</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[bq-results-20260701-164713-1782924512661.csv_CA6B0386986D40CBBD1A8EC19A8E9EB8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ClaimType</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ClaimType]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ClaimType</remote-alias>
+              <ordinal>9</ordinal>
+              <family>bq-results-20260701-164713-1782924512661.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[bq-results-20260701-164713-1782924512661.csv_CA6B0386986D40CBBD1A8EC19A8E9EB8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>claim_year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[claim_year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>claim_year</remote-alias>
+              <ordinal>10</ordinal>
+              <family>bq-results-20260701-164713-1782924512661.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[bq-results-20260701-164713-1782924512661.csv_CA6B0386986D40CBBD1A8EC19A8E9EB8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>claim_duration</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[claim_duration]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>claim_duration</remote-alias>
+              <ordinal>11</ordinal>
+              <family>bq-results-20260701-164713-1782924512661.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>78</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[bq-results-20260701-164713-1782924512661.csv_CA6B0386986D40CBBD1A8EC19A8E9EB8]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:ClaimType:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Outpatient&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Inpatient&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='bq-results-20260701-164713-1782924512661.csv' id='bq-results-20260701-164713-1782924512661.csv_CA6B0386986D40CBBD1A8EC19A8E9EB8'>
+            <properties context=''>
+              <relation connection='textscan.1odqri71bbmvfq19ufoyj0r3ra6w' name='bq-results-20260701-164713-1782924512661.csv' table='[bq-results-20260701-164713-1782924512661#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_CM' separator=','>
+                  <column datatype='string' name='BeneID' ordinal='0' />
+                  <column datatype='string' name='ClaimID' ordinal='1' />
+                  <column datatype='date' name='ClaimStartDt' ordinal='2' />
+                  <column datatype='date' name='ClaimEndDt' ordinal='3' />
+                  <column datatype='string' name='Provider' ordinal='4' />
+                  <column datatype='integer' name='InscClaimAmtReimbursed' ordinal='5' />
+                  <column datatype='integer' name='DeductibleAmtPaid' ordinal='6' />
+                  <column datatype='date' name='AdmissionDt' ordinal='7' />
+                  <column datatype='date' name='DischargeDt' ordinal='8' />
+                  <column datatype='string' name='ClaimType' ordinal='9' />
+                  <column datatype='integer' name='claim_year' ordinal='10' />
+                  <column datatype='integer' name='claim_duration' ordinal='11' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.01l6d0q1jxfvz310b2kef1v0izej'>
+      <datasources>
+        <datasource caption='bq-results-20260701-164713-1782924512661' name='federated.01l6d0q1jxfvz310b2kef1v0izej' />
+      </datasources>
+      <datasource-dependencies datasource='federated.01l6d0q1jxfvz310b2kef1v0izej'>
+        <column caption='Claim Type' datatype='string' name='[ClaimType]' role='dimension' type='nominal' />
+        <column caption='Claim Year' datatype='integer' name='[claim_year]' role='dimension' type='quantitative' />
+        <column-instance column='[ClaimType]' derivation='None' name='[none:ClaimType:nk]' pivot='key' type='nominal' />
+        <column-instance column='[claim_year]' derivation='None' name='[none:claim_year:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.01l6d0q1jxfvz310b2kef1v0izej].[none:ClaimType:nk]'>
+        <groupfilter function='level-members' level='[none:ClaimType:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='quantitative' column='[federated.01l6d0q1jxfvz310b2kef1v0izej].[none:claim_year:qk]' included-values='in-range'>
+        <min>2008</min>
+        <max>2009</max>
+      </filter>
+    </shared-view>
+  </shared-views>
+  <worksheets>
+    <worksheet name='Avg Claim Amt'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bq-results-20260701-164713-1782924512661' name='federated.01l6d0q1jxfvz310b2kef1v0izej' />
+          </datasources>
+          <datasource-dependencies datasource='federated.01l6d0q1jxfvz310b2kef1v0izej'>
+            <column caption='Claim Type' datatype='string' name='[ClaimType]' role='dimension' type='nominal' />
+            <column caption='Insc Claim Amt Reimbursed' datatype='integer' name='[InscClaimAmtReimbursed]' role='measure' type='quantitative' />
+            <column-instance column='[InscClaimAmtReimbursed]' derivation='Avg' name='[avg:InscClaimAmtReimbursed:qk]' pivot='key' type='quantitative' />
+            <column caption='Claim Year' datatype='integer' name='[claim_year]' role='dimension' type='quantitative' />
+            <column-instance column='[ClaimType]' derivation='None' name='[none:ClaimType:nk]' pivot='key' type='nominal' />
+            <column-instance column='[claim_year]' derivation='None' name='[none:claim_year:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.01l6d0q1jxfvz310b2kef1v0izej].[none:ClaimType:nk]</column>
+            <column>[federated.01l6d0q1jxfvz310b2kef1v0izej].[none:claim_year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='auto-subtitle' class='0' field='[federated.01l6d0q1jxfvz310b2kef1v0izej].[avg:InscClaimAmtReimbursed:qk]' scope='rows' value='true' />
+            <format attr='display' class='0' field='[federated.01l6d0q1jxfvz310b2kef1v0izej].[avg:InscClaimAmtReimbursed:qk]' scope='rows' value='false' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.01l6d0q1jxfvz310b2kef1v0izej].[avg:InscClaimAmtReimbursed:qk]' value='c&quot;$&quot;#,##0;(&quot;$&quot;#,##0)' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.01l6d0q1jxfvz310b2kef1v0izej].[none:ClaimType:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true'>Claim Type:</run>
+                <run>Æ&#10;</run>
+                <run bold='true'><![CDATA[<[federated.01l6d0q1jxfvz310b2kef1v0izej].[none:ClaimType:nk]>]]></run>
+                <run>Æ&#10;&#10;</run>
+                <run bold='true'>Average Claim Amount:</run>
+                <run>Æ&#10;</run>
+                <run bold='true'><![CDATA[<[federated.01l6d0q1jxfvz310b2kef1v0izej].[avg:InscClaimAmtReimbursed:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.01l6d0q1jxfvz310b2kef1v0izej].[avg:InscClaimAmtReimbursed:qk]</rows>
+        <cols>[federated.01l6d0q1jxfvz310b2kef1v0izej].[none:ClaimType:nk]</cols>
+      </table>
+      <simple-id uuid='{611F4EA3-23AC-4310-A21E-30370B899861}' />
+    </worksheet>
+    <worksheet name='Claim Duration'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Average Hospital Stay</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bq-results-20260701-164713-1782924512661' name='federated.01l6d0q1jxfvz310b2kef1v0izej' />
+          </datasources>
+          <datasource-dependencies datasource='federated.01l6d0q1jxfvz310b2kef1v0izej'>
+            <column caption='Claim Type' datatype='string' name='[ClaimType]' role='dimension' type='nominal' />
+            <column-instance column='[claim_duration]' derivation='Avg' name='[avg:claim_duration:qk]' pivot='key' type='quantitative' />
+            <column caption='Claim Duration' datatype='integer' name='[claim_duration]' role='measure' type='quantitative' />
+            <column caption='Claim Year' datatype='integer' name='[claim_year]' role='dimension' type='quantitative' />
+            <column-instance column='[ClaimType]' derivation='None' name='[none:ClaimType:nk]' pivot='key' type='nominal' />
+            <column-instance column='[claim_year]' derivation='None' name='[none:claim_year:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.01l6d0q1jxfvz310b2kef1v0izej].[none:ClaimType:nk]</column>
+            <column>[federated.01l6d0q1jxfvz310b2kef1v0izej].[none:claim_year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.01l6d0q1jxfvz310b2kef1v0izej].[avg:claim_duration:qk]' value='n#,##0.0&quot;Days &quot;;(#,##0.0&quot;Days &quot;)' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <encodings>
+              <text column='[federated.01l6d0q1jxfvz310b2kef1v0izej].[avg:claim_duration:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true'>Claim Type:</run>
+                <run>Æ&#10;</run>
+                <run>Æ&#10;&#10;</run>
+                <run bold='true'>Average Hospital Stay:</run>
+                <run>Æ&#10;</run>
+                <run bold='true'> Days</run>
+              </formatted-text>
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='14'>&lt;</run>
+                <run bold='true' fontsize='14'>[federated.01l6d0q1jxfvz310b2kef1v0izej].[avg:claim_duration:qk]</run>
+                <run bold='true' fontsize='14'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{680047E9-E2CB-40D5-8370-CC1FDBEEC7B8}' />
+    </worksheet>
+    <worksheet name='Claims by Type'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bq-results-20260701-164713-1782924512661' name='federated.01l6d0q1jxfvz310b2kef1v0izej' />
+          </datasources>
+          <datasource-dependencies datasource='federated.01l6d0q1jxfvz310b2kef1v0izej'>
+            <column caption='Claim ID' datatype='string' name='[ClaimID]' role='dimension' type='nominal' />
+            <column caption='Claim Type' datatype='string' name='[ClaimType]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Provider]' role='dimension' type='nominal' />
+            <column caption='Claim Year' datatype='integer' name='[claim_year]' role='dimension' type='quantitative' />
+            <column-instance column='[ClaimID]' derivation='Count' name='[cnt:ClaimID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[ClaimType]' derivation='None' name='[none:ClaimType:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Provider]' derivation='None' name='[none:Provider:nk]' pivot='key' type='nominal' />
+            <column-instance column='[claim_year]' derivation='None' name='[none:claim_year:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.01l6d0q1jxfvz310b2kef1v0izej].[none:Provider:nk]'>
+            <groupfilter function='level-members' level='[none:Provider:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.01l6d0q1jxfvz310b2kef1v0izej].[none:ClaimType:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.01l6d0q1jxfvz310b2kef1v0izej].[cnt:ClaimID:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.01l6d0q1jxfvz310b2kef1v0izej].[none:claim_year:qk]</column>
+            <column>[federated.01l6d0q1jxfvz310b2kef1v0izej].[none:ClaimType:nk]</column>
+            <column>[federated.01l6d0q1jxfvz310b2kef1v0izej].[none:Provider:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.01l6d0q1jxfvz310b2kef1v0izej].[cnt:ClaimID:qk]' scope='cols' value='false' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.01l6d0q1jxfvz310b2kef1v0izej].[none:ClaimType:nk]' value='38' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.01l6d0q1jxfvz310b2kef1v0izej].[none:ClaimType:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true'>Claim Type:</run>
+                <run>Æ&#10;</run>
+                <run bold='true'><![CDATA[<[federated.01l6d0q1jxfvz310b2kef1v0izej].[none:ClaimType:nk]>]]></run>
+                <run>Æ&#10;&#10;</run>
+                <run bold='true'>Total Claims:</run>
+                <run>Æ&#10;</run>
+                <run bold='true'>&lt;COUNT(Claim ID)&gt;</run>
+                <run>Æ&#10;&#10;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.01l6d0q1jxfvz310b2kef1v0izej].[none:ClaimType:nk]</rows>
+        <cols>[federated.01l6d0q1jxfvz310b2kef1v0izej].[cnt:ClaimID:qk]</cols>
+      </table>
+      <simple-id uuid='{D83057CE-F55F-4BE8-8AF5-64830A502EC6}' />
+    </worksheet>
+    <worksheet name='KPI Closure Day'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Avg. Closure Time</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bq-results-20260701-164713-1782924512661' name='federated.01l6d0q1jxfvz310b2kef1v0izej' />
+          </datasources>
+          <datasource-dependencies datasource='federated.01l6d0q1jxfvz310b2kef1v0izej'>
+            <column caption='ClosureDays' datatype='integer' name='[Calculation_0245484905906176]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='DATEDIFF(&#13;&#10;&apos;day&apos;,&#13;&#10;[ClaimStartDt],&#13;&#10;[ClaimEndDt]&#13;&#10;)' />
+            </column>
+            <column caption='Claim End Dt' datatype='date' name='[ClaimEndDt]' role='dimension' type='ordinal' />
+            <column caption='Claim Start Dt' datatype='date' name='[ClaimStartDt]' role='dimension' type='ordinal' />
+            <column caption='Claim Type' datatype='string' name='[ClaimType]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_0245484905906176]' derivation='Avg' name='[avg:Calculation_0245484905906176:qk]' pivot='key' type='quantitative' />
+            <column caption='Claim Year' datatype='integer' name='[claim_year]' role='dimension' type='quantitative' />
+            <column-instance column='[ClaimType]' derivation='None' name='[none:ClaimType:nk]' pivot='key' type='nominal' />
+            <column-instance column='[claim_year]' derivation='None' name='[none:claim_year:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.01l6d0q1jxfvz310b2kef1v0izej].[none:ClaimType:nk]</column>
+            <column>[federated.01l6d0q1jxfvz310b2kef1v0izej].[none:claim_year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.01l6d0q1jxfvz310b2kef1v0izej].[avg:Calculation_0245484905906176:qk]' value='n#,##0.00&quot; Days&quot;;(#,##0.00&quot; Days&quot;)' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.01l6d0q1jxfvz310b2kef1v0izej].[avg:Calculation_0245484905906176:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{2A3033F9-B854-4D5D-8D67-E5D0B1EE48FE}' />
+    </worksheet>
+    <worksheet name='KPI Total Beneficiaries'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Beneficiaries</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bq-results-20260701-164713-1782924512661' name='federated.01l6d0q1jxfvz310b2kef1v0izej' />
+          </datasources>
+          <datasource-dependencies datasource='federated.01l6d0q1jxfvz310b2kef1v0izej'>
+            <column caption='Bene ID' datatype='string' name='[BeneID]' role='dimension' type='nominal' />
+            <column caption='Claim Type' datatype='string' name='[ClaimType]' role='dimension' type='nominal' />
+            <column caption='Claim Year' datatype='integer' name='[claim_year]' role='dimension' type='quantitative' />
+            <column-instance column='[BeneID]' derivation='CountD' name='[ctd:BeneID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[ClaimType]' derivation='None' name='[none:ClaimType:nk]' pivot='key' type='nominal' />
+            <column-instance column='[claim_year]' derivation='None' name='[none:claim_year:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.01l6d0q1jxfvz310b2kef1v0izej].[none:ClaimType:nk]</column>
+            <column>[federated.01l6d0q1jxfvz310b2kef1v0izej].[none:claim_year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.01l6d0q1jxfvz310b2kef1v0izej].[ctd:BeneID:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{32EA0D3A-9F00-4723-8F43-B30C8303E843}' />
+    </worksheet>
+    <worksheet name='KPI Total Providers'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Providers</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bq-results-20260701-164713-1782924512661' name='federated.01l6d0q1jxfvz310b2kef1v0izej' />
+          </datasources>
+          <datasource-dependencies datasource='federated.01l6d0q1jxfvz310b2kef1v0izej'>
+            <column caption='Claim Type' datatype='string' name='[ClaimType]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Provider]' role='dimension' type='nominal' />
+            <column caption='Claim Year' datatype='integer' name='[claim_year]' role='dimension' type='quantitative' />
+            <column-instance column='[Provider]' derivation='CountD' name='[ctd:Provider:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[ClaimType]' derivation='None' name='[none:ClaimType:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Provider]' derivation='None' name='[none:Provider:nk]' pivot='key' type='nominal' />
+            <column-instance column='[claim_year]' derivation='None' name='[none:claim_year:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.01l6d0q1jxfvz310b2kef1v0izej].[none:Provider:nk]'>
+            <groupfilter function='level-members' level='[none:Provider:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.01l6d0q1jxfvz310b2kef1v0izej].[none:ClaimType:nk]</column>
+            <column>[federated.01l6d0q1jxfvz310b2kef1v0izej].[none:claim_year:qk]</column>
+            <column>[federated.01l6d0q1jxfvz310b2kef1v0izej].[none:Provider:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='tick-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='height' value='19' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.01l6d0q1jxfvz310b2kef1v0izej].[ctd:Provider:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{5C603001-59D3-4212-9122-0A0897FC7379}' />
+    </worksheet>
+    <worksheet name='KPI TotalAMtReimbursed '>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Total Reimbursed</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bq-results-20260701-164713-1782924512661' name='federated.01l6d0q1jxfvz310b2kef1v0izej' />
+          </datasources>
+          <datasource-dependencies datasource='federated.01l6d0q1jxfvz310b2kef1v0izej'>
+            <column caption='Claim Type' datatype='string' name='[ClaimType]' role='dimension' type='nominal' />
+            <column caption='Insc Claim Amt Reimbursed' datatype='integer' name='[InscClaimAmtReimbursed]' role='measure' type='quantitative' />
+            <column caption='Claim Year' datatype='integer' name='[claim_year]' role='dimension' type='quantitative' />
+            <column-instance column='[ClaimType]' derivation='None' name='[none:ClaimType:nk]' pivot='key' type='nominal' />
+            <column-instance column='[claim_year]' derivation='None' name='[none:claim_year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[InscClaimAmtReimbursed]' derivation='Sum' name='[sum:InscClaimAmtReimbursed:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.01l6d0q1jxfvz310b2kef1v0izej].[none:ClaimType:nk]</column>
+            <column>[federated.01l6d0q1jxfvz310b2kef1v0izej].[none:claim_year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.01l6d0q1jxfvz310b2kef1v0izej].[sum:InscClaimAmtReimbursed:qk]' value='n#,##0,,.0M;(#,##0,,.0M)' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.01l6d0q1jxfvz310b2kef1v0izej].[sum:InscClaimAmtReimbursed:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{6EFD6E57-ED13-4C7A-8935-3EFE3C29BC1C}' />
+    </worksheet>
+    <worksheet name='Reimbursement by Type'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bq-results-20260701-164713-1782924512661' name='federated.01l6d0q1jxfvz310b2kef1v0izej' />
+          </datasources>
+          <datasource-dependencies datasource='federated.01l6d0q1jxfvz310b2kef1v0izej'>
+            <column caption='Claim Type' datatype='string' name='[ClaimType]' role='dimension' type='nominal' />
+            <column caption='Insc Claim Amt Reimbursed' datatype='integer' name='[InscClaimAmtReimbursed]' role='measure' type='quantitative' />
+            <column caption='Claim Year' datatype='integer' name='[claim_year]' role='dimension' type='quantitative' />
+            <column-instance column='[ClaimType]' derivation='None' name='[none:ClaimType:nk]' pivot='key' type='nominal' />
+            <column-instance column='[claim_year]' derivation='None' name='[none:claim_year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[InscClaimAmtReimbursed]' derivation='Sum' name='[sum:InscClaimAmtReimbursed:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.01l6d0q1jxfvz310b2kef1v0izej].[none:ClaimType:nk]</column>
+            <column>[federated.01l6d0q1jxfvz310b2kef1v0izej].[none:claim_year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.01l6d0q1jxfvz310b2kef1v0izej].[sum:InscClaimAmtReimbursed:qk]' scope='cols' value='false' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.01l6d0q1jxfvz310b2kef1v0izej].[none:ClaimType:nk]' value='29' />
+            <format attr='text-format' field='[federated.01l6d0q1jxfvz310b2kef1v0izej].[sum:InscClaimAmtReimbursed:qk]' value='c&quot;$&quot;#,##0,,.0M;(&quot;$&quot;#,##0,,.0M)' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.01l6d0q1jxfvz310b2kef1v0izej].[sum:InscClaimAmtReimbursed:qk]' value='c&quot;$&quot;#,##0.0;(&quot;$&quot;#,##0.0)' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.01l6d0q1jxfvz310b2kef1v0izej].[none:ClaimType:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true'>Claim Type:</run>
+                <run>Æ&#10;</run>
+                <run bold='true'><![CDATA[<[federated.01l6d0q1jxfvz310b2kef1v0izej].[none:ClaimType:nk]>]]></run>
+                <run>Æ&#10;&#10;</run>
+                <run bold='true'>Total Reimbursement:</run>
+                <run>Æ&#10;</run>
+                <run bold='true'><![CDATA[<[federated.01l6d0q1jxfvz310b2kef1v0izej].[sum:InscClaimAmtReimbursed:qk]>]]></run>
+                <run>Æ&#10;&#10;</run>
+                <run bold='true'>Average Claim:</run>
+                <run>Æ&#10;</run>
+                <run bold='true'><![CDATA[<AVG(Insc Claim Amt Reimbursed)>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.01l6d0q1jxfvz310b2kef1v0izej].[none:ClaimType:nk]</rows>
+        <cols>[federated.01l6d0q1jxfvz310b2kef1v0izej].[sum:InscClaimAmtReimbursed:qk]</cols>
+      </table>
+      <simple-id uuid='{1D815840-F3E9-435F-AE2D-022F1D84335B}' />
+    </worksheet>
+    <worksheet name='Top Providers'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bq-results-20260701-164713-1782924512661' name='federated.01l6d0q1jxfvz310b2kef1v0izej' />
+          </datasources>
+          <datasource-dependencies datasource='federated.01l6d0q1jxfvz310b2kef1v0izej'>
+            <column caption='Claim Type' datatype='string' name='[ClaimType]' role='dimension' type='nominal' />
+            <column caption='Insc Claim Amt Reimbursed' datatype='integer' name='[InscClaimAmtReimbursed]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Provider]' role='dimension' type='nominal' />
+            <column caption='Claim Year' datatype='integer' name='[claim_year]' role='dimension' type='quantitative' />
+            <column-instance column='[ClaimType]' derivation='None' name='[none:ClaimType:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Provider]' derivation='None' name='[none:Provider:nk]' pivot='key' type='nominal' />
+            <column-instance column='[claim_year]' derivation='None' name='[none:claim_year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[InscClaimAmtReimbursed]' derivation='Sum' name='[sum:InscClaimAmtReimbursed:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.01l6d0q1jxfvz310b2kef1v0izej].[none:Provider:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([InscClaimAmtReimbursed])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:Provider:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.01l6d0q1jxfvz310b2kef1v0izej].[none:Provider:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.01l6d0q1jxfvz310b2kef1v0izej].[sum:InscClaimAmtReimbursed:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.01l6d0q1jxfvz310b2kef1v0izej].[none:ClaimType:nk]</column>
+            <column>[federated.01l6d0q1jxfvz310b2kef1v0izej].[none:claim_year:qk]</column>
+            <column>[federated.01l6d0q1jxfvz310b2kef1v0izej].[none:Provider:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.01l6d0q1jxfvz310b2kef1v0izej].[sum:InscClaimAmtReimbursed:qk]' scope='cols' value='false' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.01l6d0q1jxfvz310b2kef1v0izej].[none:Provider:nk]</rows>
+        <cols>[federated.01l6d0q1jxfvz310b2kef1v0izej].[sum:InscClaimAmtReimbursed:qk]</cols>
+      </table>
+      <simple-id uuid='{ADE409C1-ADA1-4440-B152-E3541075C09D}' />
+    </worksheet>
+    <worksheet name='Total Claims'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bq-results-20260701-164713-1782924512661' name='federated.01l6d0q1jxfvz310b2kef1v0izej' />
+          </datasources>
+          <datasource-dependencies datasource='federated.01l6d0q1jxfvz310b2kef1v0izej'>
+            <column caption='Claim ID' datatype='string' name='[ClaimID]' role='dimension' type='nominal' />
+            <column caption='Claim Type' datatype='string' name='[ClaimType]' role='dimension' type='nominal' />
+            <column caption='Claim Year' datatype='integer' name='[claim_year]' role='dimension' type='quantitative' />
+            <column-instance column='[ClaimID]' derivation='Count' name='[cnt:ClaimID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[ClaimType]' derivation='None' name='[none:ClaimType:nk]' pivot='key' type='nominal' />
+            <column-instance column='[claim_year]' derivation='None' name='[none:claim_year:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.01l6d0q1jxfvz310b2kef1v0izej].[none:ClaimType:nk]</column>
+            <column>[federated.01l6d0q1jxfvz310b2kef1v0izej].[none:claim_year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.01l6d0q1jxfvz310b2kef1v0izej].[cnt:ClaimID:qk]' value='n#,##0,K;(#,##0,K)' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' field='[federated.01l6d0q1jxfvz310b2kef1v0izej].[cnt:ClaimID:qk]' value='center' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.01l6d0q1jxfvz310b2kef1v0izej].[cnt:ClaimID:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{431DD0F7-1EB6-43BE-9F91-4B0F2350E80F}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Healthcare Fraud Dashboard'>
+      <style />
+      <size maxheight='900' maxwidth='1400' minheight='900' minwidth='1400' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='bq-results-20260701-164713-1782924512661' name='federated.01l6d0q1jxfvz310b2kef1v0izej' />
+      </datasources>
+      <datasource-dependencies datasource='federated.01l6d0q1jxfvz310b2kef1v0izej'>
+        <column caption='Claim Type' datatype='string' name='[ClaimType]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Provider]' role='dimension' type='nominal' />
+        <column caption='Claim Year' datatype='integer' name='[claim_year]' role='dimension' type='quantitative' />
+        <column-instance column='[ClaimType]' derivation='None' name='[none:ClaimType:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Provider]' derivation='None' name='[none:Provider:nk]' pivot='key' type='nominal' />
+        <column-instance column='[claim_year]' derivation='None' name='[none:claim_year:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98222' id='32' param='horz' type-v2='layout-flow' w='98858' x='571' y='889'>
+            <zone h='98222' id='30' type-v2='layout-basic' w='98858' x='571' y='889'>
+              <zone h='87222' id='27' param='vert' type-v2='layout-flow' w='98858' x='571' y='11889'>
+                <zone fixed-size='95' h='10556' id='3' is-fixed='true' param='vert' type-v2='layout-flow' w='98858' x='571' y='11889'>
+                  <zone fixed-size='106' h='10556' id='52' is-fixed='true' type-v2='layout-basic' w='98858' x='571' y='11889'>
+                    <zone h='10556' id='14' param='horz' type-v2='layout-flow' w='44643' x='571' y='11889'>
+                      <zone fixed-size='159' h='10556' id='15' is-fixed='true' name='Total Claims' w='11928' x='571' y='11889'>
+                        <layout-cache fixed-size-h='63' type-h='fixed' type-w='cell' />
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                      <zone fixed-size='219' h='10556' id='20' is-fixed='true' name='KPI TotalAMtReimbursed ' w='16214' x='12499' y='11889'>
+                        <layout-cache fixed-size-h='119' type-h='fixed' type-w='cell' />
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                      <zone fixed-size='295' h='10556' id='17' is-fixed='true' name='KPI Total Providers' w='16501' x='28713' y='11889'>
+                        <layout-cache fixed-size-h='91' type-h='fixed' type-w='cell' />
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                    </zone>
+                    <zone h='10556' id='53' param='horz' type-v2='layout-flow' w='54215' x='45214' y='11889'>
+                      <zone fixed-size='256' h='10556' id='18' is-fixed='true' name='KPI Total Beneficiaries' w='18857' x='45214' y='11889'>
+                        <layout-cache fixed-size-h='91' type-h='fixed' type-w='cell' />
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                      <zone h='10556' id='19' name='KPI Closure Day' w='14716' x='64071' y='11889'>
+                        <layout-cache cell-count-w='1' fixed-size-h='674' type-h='fixed' type-w='cell' />
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                      <zone fixed-size='281' h='10556' id='49' is-fixed='true' name='Claim Duration' w='20642' x='78787' y='11889'>
+                        <layout-cache minheight='245' type-h='scalable' type-w='cell' />
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                    </zone>
+                  </zone>
+                </zone>
+                <zone fixed-size='60' h='6667' id='50' is-fixed='true' type-v2='layout-basic' w='98858' x='571' y='22445'>
+                  <zone h='6667' id='36' param='horz' type-v2='layout-flow' w='57000' x='571' y='22445'>
+                    <zone h='6667' id='35' name='Claims by Type' param='[federated.01l6d0q1jxfvz310b2kef1v0izej].[none:claim_year:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='34286' x='571' y='22445'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone fixed-size='310' h='6667' id='34' is-fixed='true' mode='checkdropdown' name='Claims by Type' param='[federated.01l6d0q1jxfvz310b2kef1v0izej].[none:ClaimType:nk]' type-v2='filter' w='22714' x='34857' y='22445'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                  </zone>
+                  <zone h='6667' id='51' param='horz' type-v2='layout-flow' w='41858' x='57571' y='22445'>
+                    <zone fixed-size='297' h='5778' id='33' is-fixed='true' mode='checkdropdown' name='Claims by Type' param='[federated.01l6d0q1jxfvz310b2kef1v0izej].[none:Provider:nk]' type-v2='filter' w='41858' x='57571' y='22445'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                  </zone>
+                </zone>
+                <zone h='14111' id='28' param='horz' type-v2='layout-flow' w='98858' x='571' y='29112'>
+                  <zone h='14111' id='37' param='horz' type-v2='layout-flow' w='98858' x='571' y='29112'>
+                    <zone h='14111' id='29' name='Claims by Type' w='49429' x='571' y='29112'>
+                      <layout-cache fixed-size-h='119' minwidth='180' type-h='fixed' type-w='scalable' />
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='14111' id='38' name='Reimbursement by Type' w='49429' x='50000' y='29112'>
+                      <layout-cache fixed-size-h='101' minwidth='180' type-h='fixed' type-w='scalable' />
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                  </zone>
+                </zone>
+                <zone h='55888' id='45' is-fixed='true' type-v2='layout-basic' w='98858' x='571' y='43223'>
+                  <zone h='55888' id='39' param='horz' type-v2='layout-flow' w='51786' x='571' y='43223'>
+                    <zone fixed-size='606' h='55888' id='40' is-fixed='true' name='Top Providers' w='51786' x='571' y='43223'>
+                      <layout-cache minwidth='180' type-h='cell' type-w='scalable' />
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                  </zone>
+                  <zone h='55888' id='46' param='horz' type-v2='layout-flow' w='47072' x='52357' y='43223'>
+                    <zone h='55888' id='41' name='Avg Claim Amt' w='47072' x='52357' y='43223'>
+                      <layout-cache cell-count-w='2' minheight='164' type-h='scalable' type-w='cell' />
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                  </zone>
+                </zone>
+              </zone>
+              <zone forceUpdate='true' h='5555' id='21' type-v2='text' w='98858' x='571' y='889'>
+                <formatted-text>
+                  <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book' fontsize='24'>Healthcare Claims Analytics Dashboard</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone forceUpdate='true' h='5445' id='44' type-v2='text' w='98858' x='571' y='6444'>
+                <formatted-text>
+                  <run fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'>Medicare Claims Analysis • 135K Claims • 1,353 Providers • 2008–2009</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1750' minheight='1750' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='55' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98222' id='54' param='vert' type-v2='layout-flow' w='98858' x='571' y='889'>
+                <zone forceUpdate='true' h='5555' id='21' type-v2='text' w='98858' x='571' y='889'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book' fontsize='24'>Healthcare Claims Analytics Dashboard</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='5445' id='44' type-v2='text' w='98858' x='571' y='6444'>
+                  <formatted-text>
+                    <run fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'>Medicare Claims Analysis • 135K Claims • 1,353 Providers • 2008–2009</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='87' h='10556' id='15' is-fixed='true' name='Total Claims' w='11928' x='571' y='11889'>
+                  <layout-cache fixed-size-h='63' type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='87' h='10556' id='20' is-fixed='true' name='KPI TotalAMtReimbursed ' w='16214' x='12499' y='11889'>
+                  <layout-cache fixed-size-h='119' type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='87' h='10556' id='17' is-fixed='true' name='KPI Total Providers' w='16501' x='28713' y='11889'>
+                  <layout-cache fixed-size-h='91' type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='87' h='10556' id='18' is-fixed='true' name='KPI Total Beneficiaries' w='18857' x='45214' y='11889'>
+                  <layout-cache fixed-size-h='91' type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='87' h='10556' id='19' is-fixed='true' name='KPI Closure Day' w='14716' x='64071' y='11889'>
+                  <layout-cache cell-count-w='1' fixed-size-h='674' type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='87' h='10556' id='49' is-fixed='true' name='Claim Duration' w='20642' x='78787' y='11889'>
+                  <layout-cache minheight='245' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6667' id='35' name='Claims by Type' param='[federated.01l6d0q1jxfvz310b2kef1v0izej].[none:claim_year:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='34286' x='571' y='22445'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='310' h='6667' id='34' mode='checkdropdown' name='Claims by Type' param='[federated.01l6d0q1jxfvz310b2kef1v0izej].[none:ClaimType:nk]' type-v2='filter' w='22714' x='34857' y='22445'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='297' h='5778' id='33' mode='checkdropdown' name='Claims by Type' param='[federated.01l6d0q1jxfvz310b2kef1v0izej].[none:Provider:nk]' type-v2='filter' w='41858' x='57571' y='22445'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='119' h='14111' id='29' is-fixed='true' name='Claims by Type' w='49429' x='571' y='29112'>
+                  <layout-cache fixed-size-h='119' minwidth='180' type-h='fixed' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='119' h='14111' id='38' is-fixed='true' name='Reimbursement by Type' w='49429' x='50000' y='29112'>
+                  <layout-cache fixed-size-h='101' minwidth='180' type-h='fixed' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='55888' id='40' is-fixed='true' name='Top Providers' w='51786' x='571' y='43223'>
+                  <layout-cache minwidth='180' type-h='cell' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='55888' id='41' is-fixed='true' name='Avg Claim Amt' w='47072' x='52357' y='43223'>
+                  <layout-cache cell-count-w='2' minheight='164' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{933C54E7-5BE2-4B51-83D1-B289643BD2CC}' />
+    </dashboard>
+  </dashboards>
+  <windows show-side-pane='false' source-height='30'>
+    <window class='worksheet' name='Total Claims'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.01l6d0q1jxfvz310b2kef1v0izej].[none:ClaimID:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{9427FD4D-0104-4487-9544-4AB763B105A6}' />
+    </window>
+    <window class='worksheet' name='KPI TotalAMtReimbursed '>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{FFA8E979-A3A0-4438-B59E-A5102FD5CE07}' />
+    </window>
+    <window class='worksheet' name='KPI Total Providers'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.01l6d0q1jxfvz310b2kef1v0izej].[none:Provider:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{E1005C94-AD84-471F-B8C2-848CCF983394}' />
+    </window>
+    <window class='worksheet' name='KPI Total Beneficiaries'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.01l6d0q1jxfvz310b2kef1v0izej].[none:BeneID:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{57FFE4E2-2CDF-4D17-90A5-144A752C9741}' />
+    </window>
+    <window class='worksheet' name='KPI Closure Day'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8FC33C46-FE01-4D8F-837C-E0FF7C19A6F1}' />
+    </window>
+    <window class='worksheet' name='Claims by Type'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.01l6d0q1jxfvz310b2kef1v0izej].[none:Provider:nk]' type='filter' />
+            <card param='[federated.01l6d0q1jxfvz310b2kef1v0izej].[none:ClaimType:nk]' type='filter' />
+            <card param='[federated.01l6d0q1jxfvz310b2kef1v0izej].[none:claim_year:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card pane-specification-id='0' param='[federated.01l6d0q1jxfvz310b2kef1v0izej].[none:ClaimType:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.01l6d0q1jxfvz310b2kef1v0izej].[none:ClaimType:nk]</field>
+            <field>[federated.01l6d0q1jxfvz310b2kef1v0izej].[none:Provider:nk]</field>
+            <field>[federated.01l6d0q1jxfvz310b2kef1v0izej].[none:claim_year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{BB36788C-69BD-4F25-BA92-56E9EBEB56D7}' />
+    </window>
+    <window class='worksheet' name='Reimbursement by Type'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.01l6d0q1jxfvz310b2kef1v0izej].[none:ClaimType:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.01l6d0q1jxfvz310b2kef1v0izej].[none:ClaimType:nk]</field>
+          </color-one-way>
+        </highlight>
+        <floating-toolbar-visibility value='1' />
+      </viewpoint>
+      <simple-id uuid='{CD215C5A-986B-464A-B4B1-5637FA299F07}' />
+    </window>
+    <window class='worksheet' name='Top Providers'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.01l6d0q1jxfvz310b2kef1v0izej].[none:Provider:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{CB281BBF-271D-4D11-910A-0F52B4FF1384}' />
+    </window>
+    <window class='worksheet' name='Avg Claim Amt'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.01l6d0q1jxfvz310b2kef1v0izej].[none:ClaimType:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.01l6d0q1jxfvz310b2kef1v0izej].[none:ClaimType:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{C5641E2C-BCCC-43DE-A0BF-5F4A4F415662}' />
+    </window>
+    <window class='worksheet' name='Claim Duration'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.01l6d0q1jxfvz310b2kef1v0izej].[none:ClaimType:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{629AB4D6-5468-4460-A723-35B0A7B68453}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Healthcare Fraud Dashboard'>
+      <viewpoints>
+        <viewpoint name='Avg Claim Amt'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Claim Duration'>
+          <zoom type='entire-view' />
+          <highlight field='[federated.01l6d0q1jxfvz310b2kef1v0izej].[none:ClaimType:nk]'>
+            <bucket-selection />
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Claims by Type' />
+        <viewpoint name='KPI Closure Day'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='KPI Total Beneficiaries'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='KPI Total Providers'>
+          <zoom type='fit-width' />
+          <floating-toolbar-visibility value='2' />
+        </viewpoint>
+        <viewpoint name='KPI TotalAMtReimbursed '>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Reimbursement by Type'>
+          <floating-toolbar-visibility value='1' />
+        </viewpoint>
+        <viewpoint name='Top Providers'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total Claims'>
+          <zoom type='fit-width' />
+        </viewpoint>
+      </viewpoints>
+      <active id='4' />
+      <simple-id uuid='{8A05F04E-6246-4299-8E59-327A1070404B}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Avg Claim Amt' width='124'>
+      iVBORw0KGgoAAAANSUhEUgAAAHwAAADACAYAAADGFgewAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAEwklEQVR4nO3cTyh0exzH8Y8ZQ0woZhaKLJQm3dJs5qEslCKFwnZsrGw43URZ2knqriVl
+      o4aNnaUsJH+yULcof8IUmXJqiGmYM7+7uDXleu7N4zl39Mzn86qz+Z3p2+/XuzPNNDVFxhgD
+      oeH56g1Ifik4GQUno+BkFJyMgpNRcDIKTkbBySg4GQUno+BkFJyMgpNRcDIKTkbBySg4GQUn
+      o+BkFJyMgpNRcDIKTkbBySg4GQUno+BkFJyMgpNRcDIKTkbBySg4GQUn43pwx3GwsrKC/f39
+      N+vZbBaxWAyRSAQjIyO4vLz8zznPz89YWFjA2dnZh+fYtg3LsjA8PJy71tfX3TpaYTAucRzH
+      bGxsmHA4bPr7+83a2tqb+8vLy2Zqaso8PT2Z4+NjMzQ0ZBKJxLs5mUzGLC0tmXA4bPr6+szO
+      zs6H5+zs7JjJyUkTj8dzVzKZdOuIBcG1JzydTsNxHGxvbyMajb65l0qlsLu7C8uyUF5ejlAo
+      hLa2Nmxubr6bk0wmUVtbi4ODA3R0dPzQnNvbW9TV1b25Kisr3TpiQXAteFlZGXp7e1FeXv7u
+      3v39PYwxCAaDubVv37599229uroaPT098Hq9Pzzn7OwMjY2NP3+YApaXD22ZTAZlZWXw+Xy5
+      Na/Xi9PTU1fneL1ejI6Oor6+Hk1NTbAsC4+Pj+4cokDkJXhxcTGKiorerVdVVbk6Z2JiAvF4
+      HPF4HCcnJ2hpacHs7OznNl2g8hLc5/PBtm08PDzk1q6vrxEIBP63OR6PB11dXbi7u0M6nf78
+      5gtMXoIHg0FUVFRgb28PwN8f8La2ttDd3e3anFQqhePjY2Sz2dzrDw8P4ff7UVpa6t5hfnFF
+      xrjzX6u2bWNmZga2bePq6goA0NDQgEgkgrGxMZyfnyMajaK1tRVHR0fo7OzE9PQ0PB4PVldX
+      sbm5mfvePTc3lwsYDAYRCAQwODiIgYGBf53jOA7m5+cRi8XQ3NyM5+dnvLy8YHFxEXV1dW4c
+      sSC4FvwjHMdBIpGA3+/PfV16fX3F+Pg4LMtCKBT69Jx/3ispKUFNTY3rZ/jV5TX499zc3ODi
+      4gLt7e1fuQ0aXx5c8ks/npBRcDIKTqb4Zwc8/vGbG/vIq4rf//zqLXwZPeFkFJyMgpNRcDIK
+      TkbBySg4GQUno+BkFJyMgpNRcDIKTkbBySg4GQUno+BkFJyMgpNRcDIKTkbBySg4GQUno+Bk
+      FJyMgpNRcDIKTkbBySg4GQUno+BkFJyMgpNRcDIKTkbBySg4GQUno+BkFJyMgpNRcDIKTkbB
+      ySg4GQUno+BkFJyMgpNRcDIKTkbBySg4GQUno+BkFJyMgpNRcDIKTkbBySg4GQUno+BkFJyM
+      gpNRcDIKTkbBySg4GQUno+BkFJyMgpNRcDIKTkbBySg4GQUno+BkFJyMgpNRcDIKTkbBySg4
+      GQUno+BkFJyMgpNRcDIKTkbBySg4GQUno+BkFJyMgpNRcDIKTkbBySg4GQUno+BkFJyMgpNR
+      cDIKTkbBySg4GQUno+BkFJyMgpNRcDIKTkbBySg4GQUno+BkFJyMgpNRcDIKTkbBySg4GQUn
+      o+BkFJyMgpNRcDIKTkbBySg4GQUno+BkFJyMgpNRcDJ/Ae3sBBDswzV0AAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='30' name='Claim Duration' width='104'>
+      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
+      i8NFagAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='80' name='Claims by Type' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Healthcare Fraud Dashboard' width='192'>
+      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
+      ckAAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='24' name='KPI Closure Day' width='84'>
+      iVBORw0KGgoAAAANSUhEUgAAAFQAAAAYCAYAAABk8drWAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAECElEQVRYhe2YTWgTeRjGf/kkWoxNmIQq9OYhoWAxKY0VqT20iD0UPyiF9qAVSS8eW9FU
+      erEUpUaKUAqFXkov0YMIhRwiJAcREiyhpcmhFIUmlBBoqpHJp5nsQQgb4u5adyTrMj+Yy/N/
+      32dmHmZe/jOqarVaRUE21M2+gP8bSqAyowQqM0qgMqMEKjNKoDKjBCozSqAyowQqM0qgMqME
+      KjNKoDKjbebJd3Z2iMViXLt27bvriUSC1dVVisVind7R0cHIyAiSJDE3N0epVKKnp4fLly+j
+      Vtc/I8FgkGAwiF6vp7OzE6fTyenTp3/ZPama8bdpf3+f+fl5qtUqVqsVj8fz3bpyuczh4WGd
+      tr6+TmtrK9evX+f58+fcunWLY8eO8fLlS8rlMjdv3qyrX1tbo729HbvdTiKRYG1tDYfDwdjY
+      WEP4ctCUVz6VSjE1NYXH48FgMPxlnU6nw2q11g6DwcCHDx/o7e2lUqkwPj6O0WhEp9PR39/P
+      wcFBg4dKpcJkMmG1WnE6nTx58oS9vT22t7drNaIokk6nSafTlMtlAIrFIqIo1nn9WSsWiw09
+      0KRAHQ7HT712oVAIm82GIAhoNBpOnDgBgCRJBAIB2tra/tFDr9czMDBANBoFIBwOMz8/Tzgc
+      xu/3Mz09TTabJZvNsrCwQD6fr/WurKwQjUZJJpM8ePCAd+/eEQqFePr0KblcDmjyDD0Koiiy
+      sbHB3bt36/RcLsezZ88wm83cuXPnh7wMBgN7e3sAuFwuXC5XbW15eZmtrS0uXryIxWIhHo/j
+      dDrJZrMcHBxw9uxZIpEIFy5c4OrVqw3ev0Wg+Xwer9fLxMQEFoulpieTSTQaDQ8fPjyS3+7u
+      Lp2dnQAsLS3R3t7O4OBgbaYWCgUAbt++jdfrRRAEXr16xfDwMEajkf7+fgAymQxv377lzZs3
+      zMzMIAjC77FtikQiCILQMCZ8Ph+nTp06ktfm5ibv37+nr6+PSqXCp0+fcDgcqNVqJEmiVCrV
+      arVaLefPn+f169eoVCrOnDkDQKlUQpIkzGYzQ0NDdHV1sb+//63nX97rT+Hz+YjFYhQKBT5+
+      /MjMzAxGoxG3202hUOD+/fs8fvwYq9VKPp8nEAjgdrvrPERRJB6PMzg4WNPsdjuPHj3i+PHj
+      NS2XyzE5OYlWq0Wv1+NwOLh37x5GoxGAc+fOMTs7i9PpZHt7m1wuh81mq/V3d3fj8/m4cuUK
+      Wu23uEKhEC9evODSpUukUim+fPnCjRs3gCZtm/5riKJIsViktbW1YSv19etXFhcXGR0drRs3
+      kiSRyWTQ6XScPHmypv8WM/RX09LSQktLS4P++fNn/H4/JpOpLkwAtVqNIAgNPcoT+jdEo1HK
+      5TJdXV0//BHwBw+HiOMmOfj/AAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='24' name='KPI Total Beneficiaries' width='64'>
+      iVBORw0KGgoAAAANSUhEUgAAAEAAAAAYCAYAAABKtPtEAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAD/UlEQVRYhe2YP0hbexTHPw0JEW39E6WDiE2gQoOXOjj4h1KQDoo4SBEKktKlIBVEcGht
+      6aJD0SG4ZHDUKUVcdFEoFRUMxkZBqlIcmmobRNRobK7m3uTmdOh795H6eI83mDyo3+3+vud8
+      z7lfzvnBvddERPiNYcl1A7nGlQG5biDXuDIg1w3kGlcG5LqBXOPKgFw3kGtcGZDrBnKN394A
+      a7YKHR0dMT4+zvLyMjU1NTx58oSKigoSiQRzc3N8+PABwzBwuVx0dHRw48aNjHxd15mdnWVy
+      cpLbt2/z9OlTysvLTf7s7Iy3b9/y7t07nE4nHo+H6upqALa3t5mYmEDXde7cucPDhw/Jy8v7
+      mShZQCQSkWfPnsnW1paIiESjUTk8PBQRkfX1dZmZmZFEIiGGYcj79++lv78/I98wDBkeHpap
+      qSkxDEPC4bD09PRIJBIREZF4PC59fX2ysLAghmGIqqom9/HjR+nv75eDgwNTf2BgQJLJpIiI
+      ZGUF5ufnefToEW63G4CSkhJKS0sBuHv3Li0tLdjtdiwWC3V1dfz6hX54eIiI0NraisViwel0
+      0tbWxuLiIgChUIja2lru37+PxWIhPz/fnI5AIMCDBw8oKysz9c/OzohGo0AW7gBN09je3sbt
+      dqNpGtFolHQ6/bex6XSapaUliouLL3CGYWQ8u1wuwuEwAGtrayiKQjKZ5OjoKEO/sbGRtbU1
+      EokEAJ8+feLmzZs4HA4gC3dAKpXi9PSUFy9e4HA4sNlsfP36lZcvX6IoCgCbm5uMjo4SDofx
+      eDw8f/48Q8PhcJBKpQgEAty7dw/DMNjb2zMnJRaLMTIyQmFhIQUFBXz+/Jmuri6amppQFIVo
+      NEpnZyc2m41bt27x6tUrrNY/Xv2y9z+ZTMrg4KDs7OyYZ/F4XLxer8Tj8QvxhmGI1+v9V91g
+      MChjY2MiIuLz+SQYDGbwXq9X9vf35c2bN7K+vp7BjY6OmmeXvgJWq5WamhpmZmbM0Tw4OEDT
+      NOx2+4WVSKVSfP/+/R81dV1nfn6ehoYGAOrr65mdnUXXdQCOj49RVZW8vDyKiorY3d01c1VV
+      ZWdnx1yzayKX/09Q13V8Ph+RSITKyko2Njbo7e1FURT8fj/T09O4XC6sVitfvnyhubmZ9vZ2
+      Xr9+TXd3N1VVVUxMTBAKhXA6nQQCATweDy0tLcDPu8Pv97O0tISiKIRCIR4/fkxTUxOnp6cM
+      DQ2RSCS4fv063759M7msGfAnVFXl/Pwch8OBxfLX8KXTaU5OTkilUpSUlGCz2VhdXWVlZYWu
+      ri4zNhaLoWkaRUVF2O32C/qaphGLxUyNX2urqnqBy6oB/wXBYBC3201hYeGl1vnfGpAt/AAE
+      ujksit7PpQAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='23' name='KPI Total Providers' width='64'>
+      iVBORw0KGgoAAAANSUhEUgAAAEAAAAAXCAYAAAC74kmRAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAC5UlEQVRYhe2YMUgjaxSFv52JRhRNtIgwhRCtQkCwkDQ2qbSxEcHGxkoQwUpNEYvYWAUs
+      FWwUFFJokRTaaGehYiEYxSKoqOgkGINxNIkzua/wPZddV3YXljeBzVfOuT8cDv+5M8wXERH+
+      YhS7DdhNNQC7DdhNNQC7DdhNNQC7DdhNNQC7DdhNNQC7DdjNXx+Aw24D/5HP54nH4/T399PU
+      1PRBT6fTJBIJLi8vUVWVnp4egsEgiqJQLBZZXl7m+vr6fd7v9zM0NEShUGBnZ4eDgwMsy8Lr
+      9TI4OEhjY+PboNjMy8uLLC4uysjIiExMTIiu6z+cW19fl5OTE7EsSwzDkPn5eVldXRUREV3X
+      JRKJyM3Njei6LrquSy6XExGRo6Mj2dzclEKhIJZlyfb2toRCIXl+fhYREdsrkM1m6e7uZmlp
+      iba2tk/nBgYG8Pl8KIpCfX09wWCQVCoFQCaTweVyoWkaHo8Hj8eDy+UCoLOzk76+PpxOJ4qi
+      EAgEEBHy+TxQARXQNA1N037rTKFQYGtri0AgAICu67S2tv70XLlcZnd3F7fbTUtLC1ABAfwO
+      sViMRCKBZVmEw2H8fj8AiqKwtrbGysoKqqrS1dXF+Pg4Ho8HgGQyycLCAufn5wwPDzM1NYWi
+      /Hv5/5ei/yLRaPTTHfA96XRaIpGIGIbxQXt6epLZ2Vm5v7//oFmWJdFoVI6Pj0WkAnbAr1Aq
+      lXh8fPzmmWEYmKaJqqqcnZ1RLpfftaurK4rFIg0NDWSz2W800zTJ5/PU1tYCFVCBZDJJLBYD
+      4PT0lLu7O+rq6pieniYcDjM2NoamaczNzZHJZNA0jVKpxO3tLZOTkzidTlKpFDMzM7S3twNv
+      r8xQKITT6WRjY4N4PI7X68XhcHBxcUFvby8dHR0AfBGpzJ+ih4eH7O/vMzo6+t7X19dXHh4e
+      cDgcuN3urz3mbcHlcjmATzXTNGlubqampuZdq9gA9vb28Pl8P/wo+pP8Aw29wMcHOdl2AAAA
+      AElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='24' name='KPI TotalAMtReimbursed ' width='64'>
+      iVBORw0KGgoAAAANSUhEUgAAAEAAAAAYCAYAAABKtPtEAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAADT0lEQVRYhe2YzUtyWxSHn/cQZgmpVAZSQQZSYYOImhXUJEiaZh9CNGkiGE0DIZD6A8JJ
+      kuCgBk6joEYR5EgkqCyzINMQoTxqktkHdgfRAcn3vfcOvOdCPbO1917rrP3b66x9OL/e39/f
+      +cYIcicgNz8CyJ2A3PwIIHcCcvMjgNwJyM2PAHInIDc/AsidgNx8ewGqKhk8l8uxtbXF2NgY
+      dXV1ABSLRfx+PwcHB7y8vNDY2IjFYkGn0wGQz+fZ29sjFAoxPj6O0WgsG/vm5gaPx0M0GmVy
+      cpKRkREE4eM8fT4f2WyWmZkZqqurJZ/Hx0c8Hg9NTU1YLBagQhVQKBRwu93Mz88TCAQoFArS
+      XDQaJZPJYLfbWVpaYmhoCKfTyf39PaIo4nA4qK+vx2azsbm5yenp6Zf4kUiE1dVV7HY7Xq+X
+      WCyG1+uV5uPxOFdXV1xfX5f4hcNhwuEwkUhEGquIAKIo0tfXx/r6Oq2trSVzBoNBqghBEDCZ
+      TOh0OhKJBLW1tSwvLzM4OIhWq2VgYIBkMvklfiAQwGKx0NDQgCAIWK1WYrEYoih+bEoQGBwc
+      5Pj4uMQvGAzS19dXMlYRAfR6PT09PVJJ/omjoyPy+Tzt7e0olUqUSiXw8Srs7+9/ERDg7e2t
+      xFapVKjVam5vb6Uxo9FILBbj6ekJgIeHB9LpNB0dHSW+sjTBeDzO4uIiZrMZv9+Pw+FApVKV
+      rFlYWGB0dLRsDzCZTGxvb5PL5QC4u7uTNvqJRqNBq9VyeXkJfJR/W1vbl+dUtAn+jpaWFlZW
+      ViR7Y2MDvV7P8PAwu7u7nJ2dsba29lv/3t5eent7JVur1SIIgtRIP5mYmMDlcqHRaDg8PMRm
+      s3FxcVGy5j+vAFEUKRaLkl0sFkmn0ygUCkRR5ODggNnZ2X8V8+TkhJqami8CqFQqDAYDOzs7
+      dHZ2ltwIn1SkAkKhED6fD4Dz83OSySRKpRKLxUIqlcLlcmEwGFAoFCQSCbq6uujv7yccDhMM
+      BpmenpZiWa1WpqamcLvdAMzNzZFKpVheXqa5uZlMJkM2m8XpdJbtOd3d3TidTsxmc9lcf8n1
+      UzSbzfL8/IxarS57Mn/H6+sr6XSaqqoqNBrNP2q45ZBNgP8L3/5T+C+7eT3LF/xkbAAAAABJ
+      RU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='62' name='Reimbursement by Type' width='192'>
+      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
+      YII=
+    </thumbnail>
+    <thumbnail height='192' name='Top Providers' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='24' name='Total Claims' width='64'>
+      iVBORw0KGgoAAAANSUhEUgAAAEAAAAAYCAYAAABKtPtEAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAACf0lEQVRYhe2YMUvrYBSGH5NCwILtFKE4dRHJopNLHeoigoO4CK5dXRUFReriVNBVcaio
+      4ODURXATCv4BlQ4dpEpJi9gGAzY1OXe4kEvtvVfu4P0q9hnP+30nLy85J5ABERG+MZpqA6rp
+      B6DagGr6Aag2oJp+AKoNqKYfgGoDqukHoNqAar59ABHVBn5HEATc3d1hWVZYq9VqFAoF7u/v
+      0XWdVCpFOp1G0zRarRb5fJ6Hh4fwvGVZLC4u4jgOxWKR2dnZULu+vqbZbDIzMwPSQ/i+L8Vi
+      UZaWluTy8rJDOz8/l9vbW/F9X1zXld3dXTk5OREREdu2JZvNyuPjo9i2LbZtS6PRCLVcLhf2
+      qVQqsrW1Jc1mU0REemoE2u02vu9zeHjYpS0sLDA2NoamaQwODpJOpymXywDU63VisRiJRALT
+      NDFNk1gs1tXD8zwODg6Yn59naGgI6LERMAyDqampD8+9vr5ycXHB5OQkALZtMzw8/OG94+Nj
+      RkdHGR8fD2s9FcBHnJ2dUSgU8H2fjY2NcEdomsbp6SlHR0fous7ExATLy8uYpgnAzc0Nq6ur
+      RKNR1tfXO5v+p/H+Z97vgPfUajXJZrPium6X9vLyItvb2/L09NSxA97Pv0iP7YA/4XkejuN0
+      1FzX5e3tDV3XKZVKBEEQapVKhVarRTQa7bgzMjLC9PQ0e3t7eJ4H9NgIOI7D/v4+juNQrVa5
+      urrCsizm5ubY2dmhXq+TSCTwPI9qtcrKygqGYVAul9nc3CSZTAI/P5lra2sYhtH1jFQqRalU
+      Ip/Pk8lkGBD5Oj9F2+02z8/PRCIR4vE4mvbrBQ6CgEajAdCl/Y0vFcBn8CV2wGfyAy/moQQh
+      nhJOAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
